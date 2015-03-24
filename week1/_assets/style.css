@@ -1,10 +1,49 @@
 /* General Layout */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
     max-width: 1020px;
     margin: 0 auto;
 }
 
-/* Font Adjustments */
+/* Utilities */
 .text-center {
     text-align: center;
 }
+
+.pull-right {
+    float: right;
+}
+
+/* Board Styling */
+.lists {
+    display: table;
+    width: 100%;
+}
+
+/* Lists */
+.column {
+    display: table-cell;
+    width: 25%;
+    padding: 0 20px;
+    border-right: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+}
+
+.column:first-child {
+    border-left: none;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.column h2 {
+    text-align: center;
+}
+
