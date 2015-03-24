@@ -8,6 +8,56 @@
 
 </head>
 <body>
-    <h2>Task Editor</h2>
+
+    <div class="container">
+        <h2>Task Editor</h2>
+
+        <h3>This will eventually live in a modal window</h3>
+
+        <div class="modal">
+            <a href="#" class="pull-right" title="Close">Close</a>
+            <h3>New Task</h3>
+
+            <form action="">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+                
+                <div class="form-item">
+                    <label for="description">Description</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>                    
+                </div>
+                
+                <div class="form-item">
+                    <label for="effort">Est. Effort</label>
+                    <input type="text" name="effort">
+                    <select name="effort-increment">
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="assigned">Assigned To</label>
+                    <select name="assigned">
+                        <option value="1">User 1</option>
+                        <option value="2">User 2</option>
+                        <option value="3">User 3</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Save">
+                    <input type="reset" value="Reset">
+                </div>
+
+
+            </form>
+        </div>
+        
+    </div>
 </body>
 </html>
