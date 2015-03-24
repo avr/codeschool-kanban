@@ -1,0 +1,10 @@
+/* General Layout */
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+/* Font Adjustments */
+.text-center {
+    text-align: center;
+}
