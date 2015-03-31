@@ -40,7 +40,7 @@ a:hover { text-decoration: underline; }
 }
 
 .narrow {
-    max-width: 610px;
+    max-width: 420px;
 }
 
 .half {
@@ -56,25 +56,57 @@ a:hover { text-decoration: underline; }
 }
 
 /* Utilities */
-.text-center {
-    text-align: center;
-}
-
-.pull-right {
-    float: right;
-}
-
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .cf:after {
     clear: both;
 }
 
+.text-center { text-align: center; }
+
+.pull-right { float: right; }
+
+.margin-big { margin-bottom: 40px;}
+.no-margin { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+.reset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-bg {
+    background: #27343c;
+}
+
+.board-icon:before {
+    background: url('img/board-icon.png') no-repeat left center;
+    background-size: 32px;
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    height: 35px;
+    vertical-align: top;
+    width: 32px;
+}
+
 /* Elements */
+header {
+    padding: 8px 16px;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.dark-bg > header {
+    background: #64B5F6;
+    color: #fff;
+}
+
 footer.fixed {
     position: fixed;
     bottom: 20px;
@@ -88,7 +120,6 @@ footer a {
 
 /* Homepage */
 .home {
-    background: #27343c;
     border-bottom: 5px solid #64B5F6;
 }
 
@@ -104,6 +135,14 @@ footer a {
 
 .home input[type=text] {
     width: 225px;
+}
+
+/* Board List Page */
+ul.board-list li {
+    margin-bottom: 16px;
+    line-height: 2;
+    padding-left: 48px;
+    background: url('img/board-icon.png') no-repeat left center;
 }
 
 /* Board Styling */
