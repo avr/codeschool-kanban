@@ -1,0 +1,103 @@
+/* General Layout */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Let's use 8px a base multiplier */
+
+h1,h2,h3,h4,h5 {
+    margin-top: 0;
+}
+
+/* Layout */
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.half {
+    float: left;
+    width: 50%;
+}
+
+.half:first-child {
+    padding-right: 16px;
+}
+.half:last-child {
+    padding-left: 16px;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* Board Styling */
+.lists {
+    display: table;
+    width: 100%;
+}
+
+/* Lists */
+.column {
+    display: table-cell;
+    width: 25%;
+    padding: 0 24px;
+    border-right: 2px solid #f5f5f5;
+    border-left: 2px solid #f5f5f5;
+}
+
+.column:first-child {
+    border-left: none;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+/* Form Styles */
+select,
+input[type=text] {
+    width: 100%;
+}
+
+input[type=text].half {
+    width: 50%;
+}
+
+textarea {
+    width: 99%;
+}
+
+.form-item {
+    margin-bottom: 16px;
+}
+
+/* Modal Styles */
+.modal {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 36px;
+}
