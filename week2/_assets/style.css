@@ -1,21 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
 /* General Layout */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-/* Let's use 8px a base multiplier */
-
+/* Typography */
 h1,h2,h3,h4,h5 {
     margin-top: 0;
 }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+    color: #fff;
+}
+
+.dark a { color: #fff; }
 
 /* Layout */
 .container {
     max-width: 1020px;
     margin: 0 auto;
+}
+
+.narrow {
+    max-width: 610px;
 }
 
 .half {
@@ -47,6 +72,38 @@ h1,h2,h3,h4,h5 {
 
 .cf:after {
     clear: both;
+}
+
+/* Elements */
+footer.fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+}
+
+footer a {
+    color: #8E939D;
+}
+
+/* Homepage */
+.home {
+    background: #27343c;
+    border-bottom: 5px solid #64B5F6;
+}
+
+.home .container {
+    position: relative;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.home header {
+    padding-bottom: 64px;
+}
+
+.home input[type=text] {
+    width: 225px;
 }
 
 /* Board Styling */
@@ -82,12 +139,24 @@ input[type=text] {
     width: 100%;
 }
 
-input[type=text].half {
-    width: 50%;
+input[type=text].half { width: 50%; }
+
+input[type=text] + input[type=submit] { margin-left: 8px; }
+
+textarea { width: 99%; }
+
+.btn {
+    border-radius: 4px;
+    line-height: 1.2;
+    border: none;
 }
 
-textarea {
-    width: 99%;
+input[type=text].btn { padding: 8px 16px; }
+input[type=submit].btn { padding: 8px 24px; }
+
+.btn-action {
+    background: #64B5F6;
+    color: #fff;
 }
 
 .form-item {
