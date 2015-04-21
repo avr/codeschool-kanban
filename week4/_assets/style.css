@@ -271,24 +271,43 @@ input[type=text] {
     width: 100%;
 }
 
-input[type=text].half { width: 50%; }
+input.half { width: 50%; }
 
 input[type=text] + input[type=submit] { margin-left: 8px; }
 
 textarea { width: 99%; }
 
-.btn {
+input[type=text],
+textarea {
     border-radius: 4px;
     line-height: 1.2;
+    padding: 8px 16px;
     border: none;
 }
 
-input[type=text].btn { padding: 8px 16px; }
-input[type=submit].btn { padding: 8px 24px; }
+.btn {
+    border-radius: 4px;
+    border: none;
+    line-height: 1.2;
+    padding: 8px 24px;
+}
 
 .btn-action {
     background: #64B5F6;
     color: #fff;
+}
+
+.btn-action:hover {
+    background: #53A7EB;
+}
+
+.btn-half,
+input.btn-half {
+    border-radius: 0;
+    float: left;
+    padding: 24px;
+    width: 50%;
+    position: relative;
 }
 
 .form-item {
@@ -311,6 +330,33 @@ input[type=submit].btn { padding: 8px 24px; }
 .modal {
     max-width: 720px;
     margin: 0 auto;
-    background: #f5f5f5;
+    background: #fff389;
     padding: 36px;
+}
+
+.modal form {
+    margin-bottom: 0;
+}
+
+/* nullify modal padding */
+.modal .form-actions {
+    margin: 0 -36px -36px;
+    position: relative;
+}
+
+.modal .form-actions .separator{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #53A7EB;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+}
+
+
+.modal .form-actions .btn {
+    margin-bottom: 0;
 }

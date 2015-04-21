@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Board</title>
+<?php include('_inc/head.php'); ?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-    <link rel="stylesheet" href="_assets/style.css">
-
-</head>
 <body>
     <header class="page-header dark-bg">
         <a href="#" title="Settings" class="pull-right">Settings</a>

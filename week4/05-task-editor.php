@@ -1,22 +1,9 @@
-<?php
-
-/**
- * Gets
- */
-
-function getFormInput() {
-
-}
-var_dump($_POST);
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Task Editor</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-    <link rel="stylesheet" href="_assets/style.css">
+    <?php include('_inc/stylesheets.php'); ?>
 
 </head>
 <body>
@@ -76,11 +63,11 @@ var_dump($_POST);
 
                 </div>
 
-                <div class="form-actions">
-                    <input type="submit" value="Save">
-                    <input type="reset" value="Reset">
+                <div class="form-actions cf">
+                    <input type="submit" class="btn btn-action btn-half" value="Save">
+                    <div class="separator"></div>
+                    <input type="reset" class="btn btn-action btn-half" value="Reset">
                 </div>
-
 
             </form>
         </div>

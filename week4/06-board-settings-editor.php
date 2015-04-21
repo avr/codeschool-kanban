@@ -3,8 +3,7 @@
 <head>
     <title>Board Settings Editor</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-    <link rel="stylesheet" href="_assets/style.css">
+    <?php include('_inc/stylesheets.php'); ?>
 
 </head>
 <body>
@@ -37,7 +36,7 @@
                                 <option value="2">Development</option>
                                 <option value="3">Test</option>
                                 <option value="4">Done</option>
-                            </select>                        
+                            </select>
                         </div>
                     </div>
 
@@ -48,14 +47,15 @@
                                 <option value="1">User 1</option>
                                 <option value="2">User 2</option>
                                 <option value="3">User 3</option>
-                            </select>                        
+                            </select>
                         </div>
                     </div>
                 </div>
-                
-                <div class="form-actions">
-                    <input type="submit" value="Save">
-                    <input type="reset" value="Cancel">
+
+                <div class="form-actions cf">
+                    <input type="submit" class="btn btn-action btn-half" value="Save">
+                    <div class="separator"></div>
+                    <input type="reset" class="btn btn-action btn-half" value="Reset">
                 </div>
 
             </form>

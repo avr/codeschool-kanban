@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Board List</title>
+<?php include('_inc/head.php'); ?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-    <link rel="stylesheet" href="_assets/style.css">
-
-</head>
 <body class="dark-bg">
+
     <header class="page-header margin-big">
         <h1 class="board-icon">BCS Kanban Board</h1>
     </header>
